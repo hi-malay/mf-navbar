@@ -18,10 +18,10 @@ export default class Root extends React.Component {
         <>
           <Link className="navbar-brand" to="/">
             <img
-              src="https://single-spa.js.org/img/logo-white-bgblue.svg"
-              className="d-inline-block align-top"
-              height="30"
-              width="30"
+              src="https://as2.ftcdn.net/v2/jpg/01/34/74/23/1000_F_134742344_ewV8CI2eeb8iSTujRWYXgR5HBivbSCYx.jpg"
+              className="d-inline-block align-top mr-2 align-middle"
+              height="50"
+              width="50"
               alt=""
             />
             Microfrontends Demo

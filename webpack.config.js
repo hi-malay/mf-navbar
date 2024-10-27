@@ -7,6 +7,7 @@ module.exports = (webpackConfigEnv) => {
     orgName: "mf-demo",
     projectName: "navbar",
     webpackConfigEnv,
+
   });
 
   // entry: '/Users/malaymishra/Downloads/ALL_TECH/MicroFrontEnd/navbar/src/mf-demo-navbar.js',

@@ -29,7 +29,7 @@ export default class Root extends React.Component {
           <div class="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="/employees">
+                <Link className="nav-link" to="/mf-root-config/employees">
                   Employees
                 </Link>
               </li>

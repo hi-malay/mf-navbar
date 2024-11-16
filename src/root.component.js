@@ -3,7 +3,7 @@ import React from "react";
 
 export default class Root extends React.Component {
   state = {
-    hasError: false
+    hasError: false,
   };
 
   componentDidCatch(error, info) {
@@ -16,7 +16,7 @@ export default class Root extends React.Component {
     } else {
       return (
         <>
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/mf-root-config">
             <img
               src="https://as2.ftcdn.net/v2/jpg/01/34/74/23/1000_F_134742344_ewV8CI2eeb8iSTujRWYXgR5HBivbSCYx.jpg"
               className="d-inline-block align-top mr-2 align-middle"

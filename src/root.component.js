@@ -11,12 +11,14 @@ export default class Root extends React.Component {
   }
 
   render() {
+    const isProd = process.env.NODE_ENV === "production";
+    console.log("isProd in mf-navbar:>> ", isProd);
     if (this.state.hasError) {
       return <div className="error">Error</div>;
     } else {
       return (
         <>
-          <Link className="navbar-brand" to="/mf-root-config">
+          <Link className="navbar-brand" to={isProd ? "/mf-root-config" : ""}>
             <img
               src="https://as2.ftcdn.net/v2/jpg/01/34/74/23/1000_F_134742344_ewV8CI2eeb8iSTujRWYXgR5HBivbSCYx.jpg"
               className="d-inline-block align-top mr-2 align-middle"
@@ -29,7 +31,10 @@ export default class Root extends React.Component {
           <div class="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="/mf-root-config/employees">
+                <Link
+                  className="nav-link"
+                  to={isProd ? "/mf-root-config/employees" : "/employees"}
+                >
                   Employees
                 </Link>
               </li>

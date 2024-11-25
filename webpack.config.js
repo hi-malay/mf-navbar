@@ -3,11 +3,11 @@ const singleSpaDefaults = require("webpack-config-single-spa-react");
 const path = require("path");
 
 module.exports = (webpackConfigEnv) => {
-  const defaultConfig = singleSpaDefaults({ // Tailor the output including buildentry and output point on basis of props
+  const defaultConfig = singleSpaDefaults({
+    // Tailor the output including buildentry and output point on basis of props
     orgName: "mf-demo",
     projectName: "navbar",
     webpackConfigEnv,
-
   });
 
   // entry: '/Users/malaymishra/Downloads/ALL_TECH/MicroFrontEnd/navbar/src/mf-demo-navbar.js',
@@ -37,6 +37,14 @@ module.exports = (webpackConfigEnv) => {
           use: ["style-loader", "css-loader"],
         },
       ],
+    },
+    devServer: {
+      host: "0.0.0.0", // Bind to all network interfaces so that it can be mapped to a docker host
+      port: 9001,
+      historyApiFallback: true,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
     },
   });
 };

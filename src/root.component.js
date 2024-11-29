@@ -26,7 +26,7 @@ export default class Root extends React.Component {
               width="50"
               alt=""
             />
-            Microfrontends Demo (Docker)
+            Microfrontends Demo (Docker) (Check)
           </Link>
           <div class="collapse navbar-collapse">
             <ul className="navbar-nav">

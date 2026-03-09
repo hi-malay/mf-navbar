@@ -1,7 +1,8 @@
 {
   "name": "navigation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Global navigation bar micro frontend built with React 18 and single-spa",
+  "keywords": ["micro-frontend", "single-spa", "react", "navbar", "microfrontend", "systemjs"],
   "main": "index.js",
   "homepage": "https://navbar-mf.malaymishra.com",
   "scripts": {
